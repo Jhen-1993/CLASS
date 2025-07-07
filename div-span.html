@@ -1,13 +1,21 @@
+<!--基本資料結構-->
 <!DOCTYPE html>
+<!--文件類型是html-->
 <html lang="en">
+    <!--html是標籤（<tage>),lang是語言(屬性)，en是英文（值）-->
     <head>
+        <!--charset在架設網頁時文字編碼永遠是UTF-8（萬國碼）-->
         <meta charset="UTF-8" />
+        <!--畫面一進來時，寬度就設定成裝置的寬度，initial-scale=1.0是初始縮放比例-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>THESIMATE 論文夥伴 | 關於我們 About Us</title>
+        <!--頁籤名稱）-->
+        <title>THESIMATE 論文夥伴</title>
+        <!--描述-->
         <meta
             name="description"
             content="你給血肉，我織彩衣。我們提供專業的論文撰寫諮詢與潤稿，也協助你跨越統計分析的高牆，協助您的研究架構更嚴謹，數據解釋更有力！"
         />
+        <!--網頁圖示-->
         <link
             rel="apple-touch-icon"
             sizes="57x57"
@@ -85,89 +93,76 @@
         />
         <meta name="theme-color" content="#ffffff" />
         <style>
-            .title {
-                text-align: center;
-                font-size: 40px;
-            }
             .profile {
                 width: 100%;
                 min-height: 300px;
                 padding: 10px;
+                border: 1px solid #000;
                 border-radius: 10px;
             }
             .box {
                 display: grid;
-                grid-template-columns: 1fr 3fr;
+                grid-template-columns: 1fr 1fr;
                 gap: 10px;
+                background-color: #ea9c9c;
                 padding: 10px;
             }
             .box div {
                 padding: 10px;
+                background-color: #71a8eb;
                 border-radius: 10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 200px;
-            }
-            .profile-image {
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 50%;
+                min-height: 300px;
             }
             .block {
                 padding: 10px;
                 background-color: #71a8eb;
                 border-radius: 10px;
                 display: flex;
-                justify-content: flex-start;
+                justify-content: center;
                 align-items: center;
                 min-height: 200px;
                 margin-top: 10px;
             }
             .first-name {
                 font-size: 40px;
-                color: #7c5639;
-            }
-            .second-name {
-                font-size: 24px;
-                margin-top: 10px;
-                color: #57483d;
             }
         </style>
     </head>
+    <!--body是呈現要給人家看的-->
     <body>
-        <h1 class="title">關於我們 About Us</h1>
-        <hr />
+        <!--display:block 會換行-->
+        <div>區塊標簽1</div>
+        <div>區塊標簽2</div>
+
+        <!--display:inline 不會換行-->
+        <span>行內標籤1</span>
+        <span>行內標籤2</span>
+
+        <!--div是劃分區塊位置，span則針對個別內容進行修飾-->
+        <!--舉例-->
         <div class="profile">
             <div class="box">
-                <div>
-                    <img
-                        src="/images/logo/logo.png"
-                        alt="Profile Image"
-                        class="profile-image"
-                    />
-                </div>
-                <div>
-                    <article>
-                        <h1><strong class="first-name">THESIMATE </strong></h1>
-                        <p class="second-name">-你給血肉，我織彩衣-</p>
-                    </article>
-                </div>
+                <div>1</div>
+                <div>2</div>
             </div>
-            <div class="block">
-                <section>
-                    <h1><strong>設立源起 </strong></h1>
-                    <p>說明</p>
-                </section>
-            </div>
-
-            <div class="block">
-                <section>
-                    <h1><strong>您的夥伴 </strong></h1>
-                    <p>說明</p>
-                </section>
-            </div>
+            <!--若我想改變第3個block內文字設定，例如大一點，可以用<span>來處理-->
+            <div class="block">3 <span class="first-name">我</span>的名字</div>
+            <div class="block">4</div>
+        </div>
+        <!--div對應的語意，是article和section-->
+        <div>
+            <article>
+                <h1>THESIMATE 論文夥伴</h1>
+                <p>你給血肉，我織彩衣</p>
+            </article>
+            <section>
+                <h1>THESIMATE 論文夥伴</h1>
+                <p>你給血肉，我織彩衣</p>
+            </section>
         </div>
     </body>
 </html>
+<!--表示html這個tag關閉，有內容一定要關閉不然會影響後續的程式碼-->
