@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>textarea</title>
+        <style>
+            textarea {
+                width: 500px; /* cols */
+                height: 300px; /* rows */
+                resize: none; /*鎖定縮放*/
+            }
+        </style>
+    </head>
+    <body>
+        <!-- - 可以輸入多行文字，使用上需注意安全性（注入攻擊） -->
+        <!-- cols欄 越大越寬 rows列 越大越高-->
+
+        <!-- <form action="https://book.niceinfos.com/api/form/index.php">
+            <textarea
+                name="content"
+                id="content"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <input type="submit" value="送出" />
+        </form> -->
+        <!-- 可改用 css 調整外觀 和 鎖定縮放-->
+        <form action="https://book.niceinfos.com/api/form/index.php">
+            <textarea name="content" id="content"></textarea>
+            <input type="submit" value="送出" />
+        </form>
+    </body>
+</html>

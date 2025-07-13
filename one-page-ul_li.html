@@ -1,0 +1,208 @@
+<!--基本資料結構-->
+<!DOCTYPE html>
+<!--文件類型是html-->
+<html lang="en">
+    <!--html是標籤（<tage>),lang是語言(屬性)，en是英文（值）-->
+    <head>
+        <!--charset在架設網頁時文字編碼永遠是UTF-8（萬國碼）-->
+        <meta charset="UTF-8" />
+        <!--畫面一進來時，寬度就設定成裝置的寬度，initial-scale=1.0是初始縮放比例-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--頁籤名稱）-->
+        <title>THESIMATE 論文夥伴</title>
+        <!--描述-->
+        <meta
+            name="description"
+            content="你給血肉，我織彩衣。我們提供專業的論文撰寫諮詢與潤稿，也協助你跨越統計分析的高牆，協助您的研究架構更嚴謹，數據解釋更有力！"
+        />
+        <!--網頁圖示-->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="images/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="images/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="images/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="images/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="images/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="images/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="images/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="images/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="images/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="images/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="images/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="images/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <style>
+            *,
+            *::after,
+            *::before {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                scroll-behavior: smooth;
+            }
+            .header {
+                position: fixed;
+                width: 100%;
+                height: 80px;
+                left: 0;
+                top: 0;
+                background-color: #795030;
+                color: #fffefe;
+                z-index: 100;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            .menu {
+                color: #fffefe;
+                list-style-type: none;
+            }
+            .menu li {
+                display: inline;
+                margin-right: 5px;
+            }
+            .page {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #f5f2f2;
+                color: #857667;
+            }
+            .to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #795030;
+                color: #fffefe;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+        </style>
+    </head>
+    <!--body是呈現要給人家看的-->
+    <body>
+        <div class="to-top">
+            <a href="#">top</a>
+        </div>
+
+        <div class="header">
+            <div class="logo">
+                <img
+                    src="images/logo/logo.png"
+                    style="max-width: 70px; border-radius: 50%"
+                    alt="logo"
+                />
+            </div>
+            <ul class="menu">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#product">服務項目</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+                <!-- #字號代表的是ID，設定錨點 -->
+            </ul>
+        </div>
+        <div class="page" id="home">
+            <h2>首頁</h2>
+            <p>
+                你給血肉，我織彩衣。我們提供專業的論文撰寫諮詢與潤稿，也協助你跨越統計分析的高牆，協助您的研究架構更嚴謹，數據解釋更有力！
+            </p>
+        </div>
+        <div class="page" id="about">
+            <h2>關於我們</h2>
+            <p>
+                你給血肉，我織彩衣。我們提供專業的論文撰寫諮詢與潤稿，也協助你跨越統計分析的高牆，協助您的研究架構更嚴謹，數據解釋更有力！
+            </p>
+        </div>
+        <div class="page" id="product">
+            <h2>服務項目</h2>
+            <p> 論文排版-2000元/份(百頁內)</p>
+            <p>單獨購買： 目錄450元 每頁20元</p>
+            <p>論文潤稿- 0.3元/字</p>
+            <p>論文輔導(家教)- 500/小時</p>
+            <p>統計分析與解讀-聯繫我們議價</p>
+            <p>問卷設計與信效度檢定-聯繫我們議價</p>
+            </p>
+        </div>
+        <div class="page" id="contact">
+            <h2>聯絡我們</h2>
+            <p>
+                你給血肉，我織彩衣。我們提供專業的論文撰寫諮詢與潤稿，也協助你跨越統計分析的高牆，協助您的研究架構更嚴謹，數據解釋更有力！
+            </p>
+        </div>
+    </body>
+</html>
+<!--表示html這個tag關閉，有內容一定要關閉不然會影響後續的程式碼-->

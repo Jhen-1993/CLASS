@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>表單 Form</title>
+    </head>
+    <body>
+        <!-- action 輸入表單發送的位置（URL），預設為自己 -->
+        <!-- 前端與後端的差異？- 本質上是技術的差異，顯而易見為是否有寫入權限(Write)，有寫入權限的就是後端-->
+        <!-- method 是表單傳送的方式，預設為 get，
+        get(read):Read；發送的資料會顯示在網址列，不可以用在傳送敏感資料
+        post(create)：write；會先打包資料，再發送，可以傳送敏感資料（不會出現在網址列上），但較耗資源
+        put(update)：write; 協定有定義，設定有定義，但是瀏覽器沒有實作，僅使用 Command Line 環境可以使用，會使用 POST 作為替代
+        delete(delete)：write；協定有定義，但是瀏覽器沒有實作， 使用 Command Line 環境可以使用，使用 POST 作為替代
+        -->
+        <!-- enctype 是表單傳送的編碼方式，預設為 application/x-www-form-urlencoded。確保傳送的資料可以被正確解讀，不會受特殊符號影響 -->
+        <h2>method: get</h2>
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="get"
+            enctype="application/x-www-form-urlencoded"
+        >
+            <input type="text" name="username" />
+            <input type="password" name="password" />
+            <input type="submit" value="登入" />
+        </form>
+        <h2>method: post</h2>
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+        >
+            <input type="text" name="username" />
+            <input type="password" name="password" />
+            <input type="submit" value="登入" />
+        </form>
+        <h2>method: upload picture-fail</h2>
+        <!-- enctype使用 application/x-www-form-urlencoded -> 文字編碼避免特殊字元的干擾，無法上傳圖片 -->
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+        >
+            <input type="text" name="username" />
+            <input type="password" name="password" />
+            <input type="file" name="picture" />
+            <input type="submit" value="上傳" />
+        </form>
+        <h2>method: upload picture-success</h2>
+        <!-- enctype使用 multipart/form-data -> 不會進行文字編碼，搭配 POST 可以上傳圖片 -->
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="post"
+            enctype="multipart/form-data"
+        >
+            <input type="text" name="username" />
+            <input type="password" name="password" />
+            <input type="file" name="picture" />
+            <input type="submit" value="上傳" />
+        </form>
+    </body>
+</html>

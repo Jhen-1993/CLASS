@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Button</title>
+    </head>
+    <body>
+        <!-- submit送出表單，要在form內才有效果； button是單純按鈕，不會送出表單； reset是將表單內的欄位清除，要在form內才有效果 -->
+        <form action="https://book.niceinfos.com/api/form/index.php">
+            <input type="text" name="name" id="name" />
+            <select name="gender" id="gender">
+                <option value="male">男</option>
+                <option value="female">女</option>
+            </select>
+            <input
+                type="checkbox"
+                name="interest[]"
+                id="interest"
+                value="reading"
+            />
+            <label for="reading">閱讀</label>
+            <input
+                type="checkbox"
+                name="interest[]"
+                id="interest"
+                value="swimming"
+            />
+            <label for="reading">游泳</label>
+            <input
+                type="checkbox"
+                name="interest[]"
+                id="interest"
+                value="coding"
+            />
+            <label for="reading">寫程式</label>
+            <!-- 隱藏欄位自帶數值，此數值非給使用者填寫，可用來驗證表單的來源性，避免假冒表單 -->
+            <input type="hidden" name="hidden" value="demo" />
+            <button type="reset">重置</button>
+            <button type="button">按鈕</button>
+            <button type="submit">送出</button>
+        </form>
+
+        <button type="reset">重置1</button>
+        <button type="button">按鈕1</button>
+        <button type="submit">送出1</button>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input Radio</title>
+    </head>
+    <body>
+        <h1>單選 Radio</h1>
+        <!-- 一但選取群組，無法完全取消(有隱含必填的意思)
+         name 屬性為群組名稱
+         使用 value 定義每個選項的值
+         checked為預設值 (在這裡先預選男性，這樣可以避免出現漏填) -->
+        <form action="https://book.niceinfos.com/api/form/index.php">
+            <div>
+                <label for="gender">性別</label>
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                    checked
+                />
+                <label for="male">男</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" value="female" />
+                <label for="female">女</label>
+            </div>
+            <div>
+                <input type="submit" value="送出" />
+            </div>
+        </form>
+    </body>
+</html>

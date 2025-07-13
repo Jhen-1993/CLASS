@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Date & Time</title>
+    </head>
+    <body>
+        <h1>date / time</h1>
+        <form action="https://book.niceinfos.com/api/form/index.php">
+            <input type="date" name="date" id="date" />
+            <input type="time" name="time" id="time" />
+            <input type="submit" value="送出" />
+        </form>
+        <h1>datetime</h1>
+        <!-- 傳送時會傳送『日期時間格式』，有裝置上的風險 -->
+        <form action="https://book.niceinfos.com/api/form/index.php">
+            <input type="datetime-local" name="datetime" id="datetime" />
+            <input type="submit" value="送出" />
+        </form>
+    </body>
+</html>
