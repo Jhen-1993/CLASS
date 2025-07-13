@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Css tag 標籤選擇器</title>
+        <link rel="stylesheet" href="reset.css" />
+         <!-- 只要頁面上有對應的標籤，就會被套用，影響範圍廣泛，不建議使用 -->
+        <style>
+            div {
+                background-color: red;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div>some text</div>
+        <p>some text</p>
+        <p>
+            <span>123</span>
+            <div style="background-color: blue;">567</div>
+        </p>
+    </body>
+</html>

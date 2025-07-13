@@ -3,7 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Css宣告</title>
+        <link rel="stylesheet" href="css-declare.css" />
+        <style>
+            h1 {
+                color: red;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <!--CSS 宣告方法
+        1. 使用 style tag
+        2. 在 tag 的屬性內使用 style 屬性
+        3. 使用獨立的 css 檔案 (建議使用)
+        ->使用 <link rel="stylesheet" href="some.css">` 引入-->
+        <h1>Css宣告</h1>
+        <p style="color: blue">
+            Css宣告是css的基礎，他告訴預覽器如何顯示html元素。
+        </p>
+        <p>這是第2個p</p>
+
+        <h1>第2個h1</h1>
+        <div class="box">box</div>
+    </body>
 </html>
