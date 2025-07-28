@@ -36,16 +36,33 @@
     </head>
 
     <body>
-        <div class="hw">
-            <div class="radio-state">
-                <label>
-                    <input type="radio" name="toggle" />
-                    <img src="radio.svg" alt="image" class="no" />
-                    <img src="radio_checked.svg" alt="image" class="yes" />
-                    <span class="no">未選取</span>
-                    <span class="yes">已選取</span>
-                </label>
+        <form>
+            <div class="hw">
+                <form>
+                  <div class="radio-group">
+                    <!-- 選項一 -->
+                    <div class="radio-state">
+                      <label>
+                        <input type="radio" name="toggle" />
+                        <img src="radio.svg" alt="image" class="no" />
+                        <img src="radio_checked.svg" alt="image" class="yes" />
+                        <span class="no">男</span>
+                        <span class="yes">男</span>
+                      </label>
+                    </div>
+            
+                    <!-- 選項二 -->
+                    <div class="radio-state">
+                      <label>
+                        <input type="radio" name="toggle" />
+                        <img src="radio.svg" alt="image" class="no" />
+                        <img src="radio_checked.svg" alt="image" class="yes" />
+                        <span class="no">女</span>
+                        <span class="yes">女</span>
+                      </label>
+                    </div>
+                <button class="button" type="reset">復原</button>
             </div>
-        </div>
+        </form>
     </body>
 </html>
