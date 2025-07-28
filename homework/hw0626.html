@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Radio版本的 :checked切換</title>
+        <link rel="stylesheet" href="reset.css" />
+        <style>
+            .state {
+                display: none;
+            }
+            .radio-state label {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .radio-state .yes {
+                display: none;
+            }
+
+            /* checked 狀態下顯示 yes，隱藏 no */
+            .radio-state input[type="radio"]:checked ~ .yes {
+                display: inline-block;
+            }
+
+            .radio-state input[type="radio"]:checked ~ .no {
+                display: none;
+            }
+
+            .radio-state input[type="radio"] {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="hw">
+            <div class="radio-state">
+                <label>
+                    <input type="radio" name="toggle" />
+                    <img src="radio.svg" alt="image" class="no" />
+                    <img src="radio_checked.svg" alt="image" class="yes" />
+                    <span class="no">未選取</span>
+                    <span class="yes">已選取</span>
+                </label>
+            </div>
+        </div>
+    </body>
+</html>
