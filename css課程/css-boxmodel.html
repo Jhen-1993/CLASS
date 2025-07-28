@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Box Model</title>
+        <!-- <link rel="stylesheet" href="reset.css"> -->
+        <style>
+            .box {
+                background-color: #3659e9;
+                color: #fff;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                border: 2px solid #000;
+                padding: 20px;
+            }
+
+            .wrapper {
+                width: 694px;
+                background-color: #df2096;
+                margin: 20px;
+            }
+
+            .wrapper-border-box {
+                width: 606px;
+                background-color: #df2096;
+                margin: 20px;
+                border: 2px solid #000;
+                padding: 20px;
+            }
+            /* content-box → 預設值，width 與 height 設定 content，故整體大小需要與 border 和 padding 進行運算。導致區塊的顯示寬高會動態異動，不好排版。
+            border-box → width 與 height 設定顯示寬高(border 以內)，content 會根據 padding 與 border 進行調節，故不會影響顯示寬高，容易排版。 */
+            .wrapper-border-box .box {
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="box">
+                    <h1>Hello World 1</h1>
+                </div>
+                <div class="box">
+                    <h1>Hello World 2</h1>
+                </div>
+            </div>
+
+            <div class="wrapper-border-box">
+                <div class="box">
+                    <h1>Hello World 3</h1>
+                </div>
+                <div class="box">
+                    <h1>Hello World 3</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

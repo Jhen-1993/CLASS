@@ -1,0 +1,9 @@
+.box {
+    background-color: #c1acf7;
+    color: black;
+    padding: 20px;
+}
+.box {
+    color: yellow !important;
+}
+/* 同層級遇到 !important 時，無條件最高優先權 */
