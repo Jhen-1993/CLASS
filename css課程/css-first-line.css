@@ -1,0 +1,8 @@
+.first-line {
+    background-color: blue;
+    color: aliceblue;
+    padding: 20px;
+}
+.first-line::first-line {
+    color: red;
+}

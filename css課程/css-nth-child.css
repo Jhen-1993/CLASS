@@ -31,3 +31,16 @@
 .table tbody tr:nth-child(1) {
     color: orange;
 }
+
+/* th,
+td {
+    text-align: center;
+} */
+
+/* 使用 nth-child(n) 將數字的部分全部靠右對齊 */
+.table tbody tr td:nth-child(2),
+.table tbody tr td:nth-child(3),
+.table tbody tr td:nth-child(4),
+.table tbody tr td:nth-child(5) {
+    text-align: right;
+}

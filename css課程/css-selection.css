@@ -1,0 +1,10 @@
+.selection {
+    background-color: rgb(178, 178, 237);
+    color: black;
+    padding: 20px;
+}
+
+.selection::selection {
+    background-color: rgb(247, 37, 37);
+    color: rgb(245, 245, 245);
+}

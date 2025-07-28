@@ -1,0 +1,32 @@
+.first-letter {
+    background-color: rgb(152, 152, 235);
+    color: white;
+    padding: 20px;
+}
+/* 使用::first-letter選擇第一個字母 */
+.first-letter::first-letter {
+    color: rgb(255, 170, 0);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 1px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+/* 使用span選擇第一個字母 (僅適合靜態版，不適合動態載入)*/
+.first-letter-n {
+    background-color: rgb(235, 235, 189);
+    color: rgb(19, 18, 18);
+    padding: 20px;
+}
+
+.first-letter-span {
+    color: rgb(255, 170, 0);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 1px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #0c0c0c;
+}
