@@ -1,0 +1,15 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3659e9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: static; */
+    position: relative;
+    left: 100px;
+}
+/* 靜態 → static → 無法移動 (top, bottom, right, left)
+浮動 → relative, absolute, fixed → 可移動
+left, right 一組, top, bottom 一組，同組別不可同時使用 */

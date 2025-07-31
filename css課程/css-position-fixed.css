@@ -1,0 +1,27 @@
+/* 固定位置
+- 原地浮起來
+- 移動時，參考畫面(body)(找原點)進行移動
+- 不會佔據原本位置
+- 參與移動
+- 一定在第一層，因為不管階層數
+- 寬度要自己設定過 */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3659e9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 10px;
+    top: 50px;
+}
+
+.wrap {
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 0, 0.161);
+    position: absolute;
+}

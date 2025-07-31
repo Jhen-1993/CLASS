@@ -1,0 +1,34 @@
+/* - relative相對位置    
+    - 原地浮起來
+    - 移動時，參考自己目前位置(找原點`(x,y)`)進行移動
+    - 會佔據原本位置
+    - 不參與移動，單純為參考點(for absolute)
+    - 不會在最後一層，因為沒意義
+
+- absolute絕對位置
+    - 原地浮起來
+    - 移動時，參考上一層非靜態位置(找原點)進行移動
+    - 不會佔據原本位置
+    - 參與移動，與上一層做絕對位置的距離
+    - 不會在第一層，因為需要參考點
+    */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3659e9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.wrap {
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 0, 0.161);
+    /* position: absolute; */
+    position: relative;
+}
