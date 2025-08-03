@@ -4,7 +4,7 @@
     background-color: rgb(249, 210, 139);
     border: solid orange;
     border-radius: 15px;
-    position: absolute;
+    position: relative;
     left: 100px;
     top: 100px;
     text-align: center;
