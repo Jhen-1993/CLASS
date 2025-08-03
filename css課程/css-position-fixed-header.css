@@ -33,3 +33,10 @@
 .page:nth-child(even) {
     background: #13859f;
 }
+
+/* Z-index
+- 圖層高度，預設為 z-index: 1;
+- 數字越高，圖層越高
+- 相同數字，後者蓋前者
+- 建議數字不要超過 100
+</aside> */
