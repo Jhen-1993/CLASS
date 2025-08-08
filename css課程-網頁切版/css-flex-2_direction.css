@@ -1,0 +1,26 @@
+.d-flex {
+    display: flex;
+    /* padding: 10px; */
+    border: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}

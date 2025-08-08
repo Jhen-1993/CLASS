@@ -1,0 +1,11 @@
+.d-flex {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around; /*可用space-between＋padding完成，彈性更高*/
+    justify-content: space-evenly;
+    /* padding: 10px; */
+    border: 1px solid #000;
+}

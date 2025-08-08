@@ -1,0 +1,17 @@
+.d-flex {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    flex-wrap: nowrap; /*預設 nowrap 不換行，壓縮寬度*/
+}
+
+.d-flex .box {
+    width: 300px;
+    background-color: rgb(26, 104, 78);
+    color: rgb(255, 255, 255);
+}
+
+.flex-wrap {
+    flex-wrap: wrap; /*建議使用 wrap 來切版*/
+}

@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #2d190e;
+    color: #f6f4f4;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header .wrap {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.header .menu ul {
+    display: flex;
+    gap: 20px; /*每個項目間的溝槽*/
+}
+.page {
+    height: 200vh;
+}

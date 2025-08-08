@@ -1,0 +1,25 @@
+.d-flex {
+    display: flex;
+    height: 300px;
+    border: 1px solid #000;
+    gap: 15px;
+    align-items: stretch; /*預設 填滿*/
+    align-items: flex-start; /*上對齊*/
+    align-items: flex-end; /*下對齊*/
+    align-items: center; /*中對齊*/
+    align-items: baseline; /*基線對齊*/
+}
+
+.d-flex .box {
+    width: 100px;
+    background-color: rgb(26, 104, 78);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h-100 {
+    height: 100px;
+}
